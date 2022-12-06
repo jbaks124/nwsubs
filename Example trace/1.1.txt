@@ -1,0 +1,3 @@
+3322 405 58501   |  MASEM    | Maakdeel       |     | 4022 438 39588H  |    10|   1 |        5,0000 |13-06-2021|          |   0        | 105 |PC  |   0       | Nee     |          | SST PLATE 10X44MM              | CWTMRK   | Inkoop |      |   1 | 5F1     
+3322 405 58501   |  MASEM    | Maakdeel       |     | 4022 438 39484H  |    20|   1 |       10,0000 |13-06-2021|          |   0        | 105 |PC  |   0       | Nee     |          | TEFZEL CBL TIE  92X2.4MM AQUA  | CWTMSC   | Inkoop |      |   1 | 5F1     
+3322 405 58501   |  MASEM    | Maakdeel       |     | 4022 685 41651H  |    30|   1 |        5,1000 |13-06-2021|          |   0        | 100 |M   |   0       | Nee     |          | EXE WS BARE CABLE SLAB SECT 5  | CWTSHI   | Inkoop |      |   1 | 5F1     
