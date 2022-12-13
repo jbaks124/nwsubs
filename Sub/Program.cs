@@ -44,11 +44,54 @@ namespace Sub
 
             Sub n = new Sub();
 
-            var file_npi = Environment.CurrentDirectory + @"\in\npi.txt";
-            var file_npi_out = Environment.CurrentDirectory + @"\out\npi.txt";
+            var file_npi = "";
+            var file_npi_out = "";
+            var file_bom = "";
+            var file_routing = "";
 
-            var file_bom = Environment.CurrentDirectory + @"\in\bom.txt";
-            var file_routing = Environment.CurrentDirectory + @"\in\routing.txt";
+            Console.WriteLine("Reading variables..");
+            var file2 = Environment.CurrentDirectory + @"\var.txt";
+            using (var reader = new StreamReader(file2))
+            {
+
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                    if (line.Length > 0)
+                    {
+                        if (line.Contains("npi_in"))
+                        {
+                            file_npi = line.Split('\t')[1];
+                            Console.WriteLine("Filepath: " + file_npi);
+                        }
+
+                        if (line.Contains("dumpuri"))
+                        {
+                            file_npi_out = line.Split('\t')[1];
+                            Console.WriteLine("Worksheet: " + file_npi_out);
+                        }
+
+                        if (line.Contains("npibom"))
+                        {
+                            file_bom = line.Split('\t')[1];
+                            Console.WriteLine("Worksheet: " + file_bom);
+                        }
+
+                        if (line.Contains("npirouting"))
+                        {
+                            file_routing = line.Split('\t')[1];
+                            Console.WriteLine("Worksheet: " + file_routing);
+                        }
+
+                    }
+                }
+            }
+
+            //var file_npi = Environment.CurrentDirectory + @"\in\npi.txt";
+            //var file_npi_out = Environment.CurrentDirectory + @"\out\npi.txt";
+
+            //var file_bom = Environment.CurrentDirectory + @"\in\bom.txt";
+            //var file_routing = Environment.CurrentDirectory + @"\in\routing.txt";
 
             List<npi> npi = new List<npi>();
             List<bom> bom = new List<bom>();
@@ -380,7 +423,7 @@ namespace Sub
             }
 
             Console.WriteLine("done!");
-            Console.ReadLine();
+            //Console.ReadLine();
 
         }
     }
