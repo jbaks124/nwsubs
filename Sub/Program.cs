@@ -396,6 +396,10 @@ namespace Sub
                                     if (npivk.ContainsKey(item))
                                     {
                                         vk_val = npivk[item].ToString();
+                                        var vk_val_round = decimal.Parse(vk_val.Replace('.', ','));
+                                        vk_val_round = Math.Round(vk_val_round);
+                                        vk_val = vk_val_round.ToString();
+
                                     }
 
                                     if (npivk_count.ContainsKey(item))
