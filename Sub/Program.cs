@@ -315,6 +315,8 @@ namespace Sub
 
                                 var t2d = decimal.Parse(t2);
 
+
+
                                 routing.Add(
                                     new routing()
                                     {
@@ -331,6 +333,7 @@ namespace Sub
 
 
                 var query2 = (from t in routing
+                              where t.routingnr == "002"
                               group t by new { t.maakartikel }
                                   into grp
                               select new

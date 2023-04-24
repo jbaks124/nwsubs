@@ -2,11 +2,11 @@ fieldcol	36
 newitemcol	36
 nondumpitem	44
 key	Product number
-dumpuri	C:\Users\joost\source\repos\nwsubs\Sub\bin\Debug\out\npi.txt
-npiuri	C:\Users\joost\Desktop\AutoCap\excel\NPI.xlsx
+dumpuri	C:\Users\lcadmin\repos\nwsubs\Sub\bin\Debug\out\npi.txt
+npiuri	C:\Users\lcadmin\repos\nwsubs\Sub\bin\Debug\excel\NPI.xlsx
 npiworksheet	NPI
 
-npibom	C:\Users\joost\source\repos\nwsubs\Sub\bin\Debug\in\Bom.txt
-npirouting	C:\Users\joost\source\repos\nwsubs\Sub\bin\Debug\in\Routing.txt
-npi_in	C:\Users\joost\source\repos\nwsubs\Sub\bin\Debug\in\npi.txt
+npibom	C:\Users\lcadmin\repos\nwsubs\Sub\bin\Debug\in\Bom.txt
+npirouting	C:\Users\lcadmin\repos\nwsubs\Sub\bin\Debug\in\Routing.txt
+npi_in	C:\Users\lcadmin\repos\nwsubs\Sub\bin\Debug\in\npi.txt
 
